@@ -1,0 +1,110 @@
+.main_questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(54, 58, 102, 0.6);
+    border-radius: 30px;
+
+    h2 {
+        color: white;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .quizQuestion_img {
+        width: 270px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    .answers__btn {
+        margin-top: 30px;
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    button {
+        text-decoration: none;
+        // background-color: rgb(26, 29, 32);
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid rgb(18, 17, 17);
+        width: calc(50% - 10px);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:not(.incorrect_answer):not(.correct_answer):hover {
+            background-color: rgba(202, 205, 227, 0.6);
+            color: #000;
+            border: 1px solid #000;
+        }
+
+        .correct_answer {
+            background-color: rgb(63, 159, 254);
+
+
+        }
+
+        .incorrect_answer {
+            background-color: rgb(199, 101, 212);
+        }
+    }
+}
+
+.score {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.results__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(54, 58, 102, 0.6);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+    color: #fff;
+
+    .new__quiz {
+        margin-top: 90px;
+        text-decoration: none;
+        background-color: rgb(26, 29, 32);
+        color: white;
+        letter-spacing: 1px;
+        padding: 10px 70px;
+        border-radius: 20px;
+        border: 1px solid rgb(18, 17, 17);
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            border: 1px solid #000;
+        }
+    }
+}
